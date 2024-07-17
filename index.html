@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <video
+        width="100%"
+        height="900px"
+        autoplay
+        loop
+        muted
+        controls
+        src="./assets/video.mp4"
+        poster="./assets/poster.png"
+      ></video>
+    </div>
+    <script>
+      window.onload = () => {
+        const video = document.querySelector("video");
+        video.play();
+        video.autoplay = true;
+      };
+    </script>
+  </body>
+</html>
